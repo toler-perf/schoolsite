@@ -86,7 +86,7 @@ const schoolsData = [
         text: "За полгода подтянул разговорный с A2 до B1.",
       },
     ],
-    siteUrl: "https://ibls.com",
+    siteUrl: "https://ibls.one/",
   },
   {
     id: "bit",
@@ -102,7 +102,7 @@ const schoolsData = [
         text: "Помогли с трудоустройством после курса frontend.",
       },
     ],
-    siteUrl: "https://bit.ru",
+    siteUrl: "https://school-bit.ru/",
   },
   {
     id: "spbu",
