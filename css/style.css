@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.header {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.header-content {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo a {
+  font-size: 1.7rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: none;
+}
+
+.back-home {
+  background: #f1f5f9;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1e293b;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.back-home:hover {
+  background: #e2e8f0;
+}
+
+.schools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.school-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.05),
+    0 2px 4px -2px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.8rem 1rem 1.5rem;
+  border: 1px solid #eef2ff;
+  height: 100%;
+}
+
+.school-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 30px -12px rgba(0, 0, 0, 0.15);
+  border-color: #cbd5e1;
+}
+
+.logo-placeholder {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(145deg, #eef2ff, #e0e7ff);
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2563eb;
+  box-shadow: 0 6px 12px -8px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.logo-placeholder img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.school-card:hover .logo-placeholder {
+  background: linear-gradient(145deg, #d9e6ff, #cbdffc);
+  transform: scale(1.02);
+}
+
+.school-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #0f172a;
+}
+
+.school-detail {
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 1.5rem 0 2rem;
+}
+
+.detail-header {
+  background: linear-gradient(115deg, #f1f5f9 0%, #ffffff 100%);
+  padding: 2rem 2rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.detail-logo {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.8rem;
+  font-weight: 800;
+  color: #1e40af;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.detail-logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.detail-title h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.badge {
+  background: #eef2ff;
+  padding: 0.3rem 0.9rem;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1e3a8a;
+}
+
+.detail-section {
+  padding: 1.8rem 2rem;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.detail-section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.price-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f3b5e;
+  background: #eef2ff;
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 60px;
+}
+
+.review-item {
+  background: #fafcff;
+  border-left: 4px solid #3b82f6;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.review-author {
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #0f172a;
+}
+
+.review-text {
+  color: #334155;
+}
+
+.school-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #2563eb;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 3rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+  margin-top: 0.5rem;
+}
+
+.school-link:hover {
+  background: #1d4ed8;
+  transform: translateX(4px);
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1.5rem;
+  color: #475569;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1rem;
+  }
+  .detail-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-title {
+    font-size: 1.3rem;
+  }
+  .price-value {
+    font-size: 1.4rem;
+  }
+}
